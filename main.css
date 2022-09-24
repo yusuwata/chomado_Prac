@@ -1,0 +1,50 @@
+/*コメントアウト *//**/
+
+/*body と ul は、2 つの規則のセレクターであり、スタイルが適用される要素を選択するために使用*/
+body{
+    font-family: monospace;
+}
+/*HTML 要素を選択してスタイルにするかを示します。 プロパティ名 は font-family で、値 は helvetica です。*/
+ul {
+    font-family: Helvetica;
+}
+
+li {
+    list-style-type: circle;
+}
+/*"クラス セレクター"listに設定されたclass属性を含む各HTML要素は、このセレクターで定義されているスタイルを取得*/
+.list {
+    list-style: square;
+}
+/*"ID セレクター"id 属性がmsgに設定されているHTML要素は、このセレクター内で定義されているスタイルを取得*/
+#msg {
+    font-family: monospace;
+}
+/*文字色：黒、背景色：緑の配色テーマのサポートを追加,16進カラーコードを使用して明るい色のテーマを定義*/
+.light-theme {
+    color: #000000;
+    background: #00FF00;
+}
+
+/*切替テーマを定義CSS に3 つの色変数を定義*/
+:root {
+    --green: #00FF00;
+    --white: #FFFFFFFF;
+    --black: #00000000;
+}
+/*ライトテーマ*/
+.light-theme {
+    --bg: var(--green);
+    --fontColor: var(--black);
+  }
+/*ダークテーマ*/
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--green);
+  }
+/*セレクター*/
+body {
+    background: var(--bg);
+    color: var(--fontColor);
+    font-family: helvetica;
+  }

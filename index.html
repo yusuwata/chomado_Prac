@@ -1,0 +1,33 @@
+<!--HTMLコード内のhead要素には、ブラウザー タブ内に表示されないWebサイトの情報を含む-->
+<!--HTMLファイルであることを表す-->
+<!DOCTYPE html>
+<!--日本語である、lang属性「要素の中で使用する言語の種類を明示する」日本語→ja,英語→en,フランス語→fr,ドイツ語→de,イタリア語→it,ロシア語→ru,韓国語→ko,アラビア語→ar,トルコ語→tr-->
+<html lang="en">
+    <head>
+        <!--UTF-8 の "文字セット" である、(charset) コンピューターでの文字の解釈方法を確立,文字セットのメタデータが見つからないと、セキュリティが侵害リスク-->
+        <meta charset="UTF-8">
+        <!--"メタデータ" によって、文字セット、スクリプト、Web ページを開くブラウザーなど、HTML ドキュメントに関するデータが定義されます。-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <!--title（タイトル）タグはSEO対策においても重要なタグ-->
+       <title>Simple website</title>      
+       <!--現在の文書と外部のリソースとの関係を指定、この要素はスタイルシートへのリンクに最もよく使用
+            サイトのアイコン（"favicon" スタイルのアイコンと、モバイル端末のホーム画面やアプリのアイコンの両方）の確立や、その他のことにも使用-->
+       <link rel="stylesheet" href="main.css">
+    </head>
+    <!--ブラウザーで表示する Web サイトのコンテンツ-->
+    <!--背景色：緑-->
+    <body class="light-theme">
+        <!--見出し<h1> 要素-->
+        <h1>Task List</h1>
+        <!--その次の 段落<p> 要素-->
+        <p id="msg">Current tasks:</p>
+        <!--順序指定されていないリスト<ul>-->
+            <Ul>
+            <!--リスト項目<li>--><!---->
+            <li class="list">Add visual styles</li>
+            <li class="list">Add light and dark thems</li>
+            <li>Enable swtching the theme</li>
+        </Ul>
+    </body>
+    </html>
