@@ -1,5 +1,4 @@
-/*コメントアウト *//**/
-
+/*#msg は ID セレクターであり、.list はクラス セレクタ*/
 /*body と ul は、2 つの規則のセレクターであり、スタイルが適用される要素を選択するために使用*/
 body{
     font-family: monospace;
@@ -20,31 +19,50 @@ li {
 #msg {
     font-family: monospace;
 }
-/*文字色：黒、背景色：緑の配色テーマのサポートを追加,16進カラーコードを使用して明るい色のテーマを定義*/
-.light-theme {
-    color: #000000;
-    background: #00FF00;
-}
 
 /*切替テーマを定義CSS に3 つの色変数を定義*/
 :root {
     --green: #00FF00;
-    --white: #FFFFFFFF;
-    --black: #00000000;
-}
+    --white: #FFFFFF;
+    --black: #000000;
+  }
+
+/*文字色：黒、背景色：緑の配色テーマのサポートを追加,16進カラーコードを使用して明るい色のテーマを定義*/
 /*ライトテーマ*/
 .light-theme {
     --bg: var(--green);
     --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
   }
 /*ダークテーマ*/
 .dark-theme {
     --bg: var(--black);
     --fontColor: var(--green);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
   }
+
 /*セレクター*/
 body {
     background: var(--bg);
     color: var(--fontColor);
     font-family: helvetica;
   }
+/*.btn クラス セレクターを使用して HTML のボタンに対する新しい規則を追加*/
+.btn {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+  }
+
+
+/**/
+/**/
+/**/
